@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  # Service pour l'application Vue.js
+  mynetwork-app:
+    build:
+      context: .
+    ports:
+      - "8080:3000"
+    depends_on:
+      - mysql
+
+  # Service pour la base de données MySQL
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: azureh3
+      MYSQL_USER: namo
+      MYSQL_PASSWORD: Nafise2202
+      MYSQL_HOST: azureh3.mysql.database.azure.com
+    ports:
+      - "3306:3306"

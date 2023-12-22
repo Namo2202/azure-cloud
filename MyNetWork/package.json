@@ -1,0 +1,26 @@
+{
+  "name": "mynetwork",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "initialize-db": "mysql -h azureh3.mysql.database.azure.com -u namo -p Nafise2202 -D azureH3 < ./MyNetWork-db/init.sql",
+    "start": "concurrently \"npm run initialize-db\" \"npm run dev\""
+  },
+  "dependencies": {
+    "joi": "^17.7.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.5",
+    "pinia": "^2.0.27",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "concurrently": "^8.2.2",
+    "vite": "^3.2.3"
+  }
+}
