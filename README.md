@@ -47,10 +47,11 @@ DB_PORT=''
 
 ```bash
 npm run dev
+```
 
 L'application sera accessible à l'adresse http://localhost:3000.
 
-Problèmes connus
+## Problèmes connus
 Problème de connexion à la base de données MySQL : Actuellement, il existe un problème de connexion à la base de données MySQL.
 
 ![Alt text](<Screenshot from 2023-12-22 20-04-39.png>)
